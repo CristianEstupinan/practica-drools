@@ -1,4 +1,4 @@
-package Criterios;
+package main.java.Criterios;
 
 public class CriteriosAplicables {
 
@@ -13,7 +13,7 @@ public class CriteriosAplicables {
     private int estado;
     private boolean verificado;
     private Capacidad tipoCriterio;
-    private int nComunes; // solo para tipo Intereses
+    private int nComunes = -1; // solo para tipo Intereses
 
     public CriteriosAplicables(Capacidad tipoCriterio) {
         this.estado = NOACTIVO;

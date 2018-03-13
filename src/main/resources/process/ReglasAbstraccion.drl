@@ -1,7 +1,6 @@
 package Reglas;
 
-import Model.*;
-import function Registro.pantalla;
+import function main.java.Reglas.Registro;
 
 rule "Abstrae edad joven"
   ruleflow-group "abstrae"

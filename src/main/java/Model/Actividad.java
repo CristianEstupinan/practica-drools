@@ -1,9 +1,9 @@
-package Model;
+package main.java.Model;
 
 import java.util.Set;
 
-import static Model.Aficiones.Interes;
-import static Model.InfoAbstractaCliente.Riesgo;
+import static main.java.Model.Aficiones.Interes;
+import static main.java.Model.InfoAbstractaCliente.Riesgo;
 
 public class Actividad {
 
