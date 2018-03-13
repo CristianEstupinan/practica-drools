@@ -1,17 +1,19 @@
 package Model;
 
-import static Model.Aficiones.Intereses;
+import java.util.Set;
+
+import static Model.Aficiones.Interes;
 import static Model.InfoAbstractaCliente.Riesgo;
 
 public class Actividad {
 
-    public String[] idioma;
-    public Intereses[] tipo;
-    public int costeMax;
-    public boolean necesidadDeportiva;
-    public Riesgo riesgo;
+    private final Set<String> idioma;
+    private final Set<Interes> tipo;
+    private final int costeMax;
+    private final boolean necesidadDeportiva;
+    private final Riesgo riesgo;
 
-    public Actividad(String[] idioma, Intereses[] tipo, int costeMax, boolean necesidadDeportiva, Riesgo riesgo) {
+    public Actividad(Set<String> idioma, Set<Interes> tipo, int costeMax, boolean necesidadDeportiva, Riesgo riesgo) {
         this.idioma = idioma;
         this.tipo = tipo;
         this.costeMax = costeMax;
@@ -19,5 +21,23 @@ public class Actividad {
         this.riesgo = riesgo;
     }
 
+    public Set<String> getIdioma() {
+        return idioma;
+    }
 
+    public Set<Interes> getTipo() {
+        return tipo;
+    }
+
+    public int getCosteMax() {
+        return costeMax;
+    }
+
+    public boolean isNecesidadDeportiva() {
+        return necesidadDeportiva;
+    }
+
+    public Riesgo getRiesgo() {
+        return riesgo;
+    }
 }

@@ -1,16 +1,21 @@
 package Model;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Aficiones {
 
-    public enum Intereses{
+    public enum Interes {
         Cultural, Paisajistico, Deportivo, Comercial, Social, Formacion
     }
 
-    public ArrayList<Intereses> intereses = new ArrayList<>();
+    private final Set<Interes> intereses;
 
-    public boolean add(Intereses intereses) {
-        return this.intereses.add(intereses);
+    public Aficiones(){
+        intereses = new HashSet<>();
+    }
+
+    public Set<Interes> getIntereses() {
+        return intereses;
     }
 }
